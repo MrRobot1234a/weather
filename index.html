@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrap">
+                <div class="city">
+                    <ul class="city-wrap">
+                        <li class="city__items">
+                            <span>Выберите город</span>
+                            <ul>
+                                <li class="city__items__link"><a id="1496153" href="#">Омск</a></li>
+                                <li class="city__items__link"><a id="4399153" href="#">Москва</a></li>
+                                <li class="city__items__link"><a id="498817" href="#">Санк-Петербург</a></li>
+                                <li class="city__items__link"><a id="542420" href="#">Краснодар</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button type="submit" class="btn__1">Сменить город</button>
+                <button type="submit" class="btn__2">Мое местоположение</button>
+                <div class="degrees">
+                    <div class="degrees__1">C&deg;</div>
+                    <div class="degrees__2">F&deg;</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="temp">
+        <div class="container">
+            <div class="temp-info">
+                <img src="img/section-temp/sun.svg" alt="sun">
+                <div class="temp-info__number"><span>0</span>&deg;</div>
+            </div>
+            <div class="temp-descr">Преимущественно солнечно</div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+
+            <div class="footer-wrapMaxWidth__1">
+                <div class="footer-wrap__wind">
+                    <div class="footer-wrap__wind-title">Ветер</div>
+                    <div class="footer-wrap__wind-descr"><span>0</span> м/c</div>
+                </div>
+
+                <div class="footer-wrap__pressure">
+                    <div class="footer-wrap__pressure-title">Давление</div>
+                    <div class="footer-wrap__pressure-descr"><span>0</span> мм рт. ст.</div>
+                </div>
+            </div>
+
+            <div class="footer-wrapMaxWidth__2">
+                <div class="footer-wrap__humidity">
+                    <div class="footer-wrap__humidity-title">Влажность</div>
+                    <div class="footer-wrap__humidity-descr"><span>0</span>%</div>
+                </div>
+
+                <div class="footer-wrap__rain">
+                    <div class="footer-wrap__rain-title">Вероятность дождя</div>
+                    <div class="footer-wrap__rain-descr"><span>0</span>%</div>
+                </div>
+            </div>
+
+            <div class="footer-wrap">
+                <div class="footer-wrap__wind">
+                    <div class="footer-wrap__wind-title">Ветер</div>
+                    <div class="footer-wrap__wind-descr"><span>0</span> м/c</div>
+                </div>
+
+                <div class="footer-wrap__pressure">
+                    <div class="footer-wrap__pressure-title">Давление</div>
+                    <div class="footer-wrap__pressure-descr"><span>0</span> мм рт. ст.</div>
+                </div>
+
+                <div class="footer-wrap__humidity">
+                    <div class="footer-wrap__humidity-title">Влажность</div>
+                    <div class="footer-wrap__humidity-descr"><span>0</span>%</div>
+                </div>
+
+                <div class="footer-wrap__rain">
+                    <div class="footer-wrap__rain-title">Вероятность дождя</div>
+                    <div class="footer-wrap__rain-descr"><span>0</span>%</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
