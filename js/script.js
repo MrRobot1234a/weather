@@ -22,8 +22,8 @@ const city = document.querySelector(`.city__items span`),
       headerWrapCityItemsSpan = document.querySelector(`.header .wrap .city__items span`);
 // console.log(wind);
 
-function weather(id) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?id=${id}&appid=43fe65be98bee3fe76d2b838c337656a&lang=ru`)
+const weather = id => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=43fe65be98bee3fe76d2b838c337656a&lang=ru`)
     .then(response => response.json())
     .then(data => {
         console.log(data);
