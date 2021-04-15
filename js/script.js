@@ -3,7 +3,8 @@ import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../css/style.sass'
 
-const city = document.querySelector(`.city__items span`),
+const wrapperCity = document.querySelector(`.city`),
+      city = document.querySelector(`.city__items span`),
       citys = document.querySelectorAll(`.city__items__link`),
       parentLinks = document.querySelector(`.city__items ul`),
       links = document.querySelectorAll(`.city__items__link a`),
@@ -19,7 +20,10 @@ const city = document.querySelector(`.city__items span`),
       tempInfoImg = document.querySelector(`.temp-info img`),
       tempInfoNumber = document.querySelector(`.temp-info__number span`),
       tempDescr = document.querySelector(`.temp-descr`),
-      headerWrapCityItemsSpan = document.querySelector(`.header .wrap .city__items span`);
+      headerWrapCityItemsSpan = document.querySelector(`.header .wrap .city__items span`),
+      headerWrapWrapForBtnsBtn1 = document.querySelector(`.header .wrap .wrapForBtns .btn__1`),
+      headerWrapLive = document.querySelector(`.header .wrap .live`),
+      headerWrapLiveSearchBtn = document.querySelector(`.header .wrap .live__search__btn`);
 // console.log(wind);
 
 const weather = id => {
@@ -115,3 +119,13 @@ links.forEach((link, index) => {
         weather(id);
     });
 });
+
+// headerWrapLiveSearchBtn.addEventListener(`click`, (e) => {
+//     headerWrapLive.style.display = `none`;
+//     wrapperCity.style.display = `block`;
+// });
+
+// headerWrapWrapForBtnsBtn1.addEventListener(`click`, (e)  => {
+//     headerWrapLive.style.display = `flex`;
+//     wrapperCity.style.display = `none`;
+// });
