@@ -63,11 +63,11 @@ parentDegrees.addEventListener(`click`, (e) => {
     if (target == degrees) {
         fahrenheit.style.cssText = `
             opacity: .4;
-            background: #498CEC;
+            background: transparent;
         `;
 
         degrees.style.cssText = `
-            background-color: rgb(109,163,240);
+            background-color: rgba(255,255,255, .2);
             opacity: 1;
         `;
 
@@ -79,11 +79,11 @@ parentDegrees.addEventListener(`click`, (e) => {
     if (target == fahrenheit) {
         degrees.style.cssText = `
             opacity: .4;
-            background: #498CEC;
+            background: transparent;
         `;
 
         fahrenheit.style.cssText = `
-            background-color: rgb(109,163,240);
+            background-color: rgba(255,255,255, .2);
             opacity: 1;
         `;
 
@@ -102,11 +102,11 @@ links.forEach((link, index) => {
         const id = link.getAttribute(`id`);
         fahrenheit.style.cssText = `
             opacity: .4;
-            background: #498CEC;
+            background: transparent;
         `;
 
         degrees.style.cssText = `
-            background-color: rgb(109,163,240);
+            background-color: rgba(255,255,255, .2);
             opacity: 1;
         `;
         // console.log(id);

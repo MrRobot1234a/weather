@@ -16,6 +16,33 @@ body {
   position: relative;
   width: 100%;
   margin-top: 7.5rem; }
+  .header .wrap .live {
+    font-size: 0;
+    display: flex;
+    display: none;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    align-items: center; }
+    .header .wrap .live__search {
+      width: 44rem;
+      height: 9.7rem;
+      border: none;
+      outline: none;
+      border-top-left-radius: .8rem;
+      border-bottom-left-radius: .8rem;
+      font-size: 3rem;
+      padding: 3.1rem 0 3rem 3.2rem; }
+      .header .wrap .live__search__btn {
+        width: 13.9rem;
+        height: 9.7rem;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        font-size: 3rem;
+        color: #1086FF;
+        background-color: #fff;
+        border-top-right-radius: .8rem;
+        border-bottom-right-radius: .8rem; }
   .header .wrap .city-wrap {
     margin: 0;
     padding: 0;
@@ -74,7 +101,7 @@ body {
     .header .wrap .degrees__1 {
       width: 50%;
       height: 100%;
-      background-color: #6da3f0;
+      background-color: rgba(255, 255, 255, 0.2);
       color: #fff;
       border-radius: .8rem;
       font-size: 1.8rem;
@@ -89,7 +116,7 @@ body {
       font-weight: 400;
       text-align: center;
       opacity: .4; }
-  .header .wrap .btn__1 {
+  .header .wrap .wrapForBtns .btn__1 {
     margin-top: 0.9rem;
     background-color: transparent;
     border: none;
@@ -99,8 +126,8 @@ body {
     font-weight: 400;
     font-size: 1.8rem;
     margin-right: 2.9rem;
-    z-index: -1; }
-  .header .wrap .btn__2 {
+    cursor: pointer; }
+  .header .wrap .wrapForBtns .btn__2 {
     margin-top: 0.9rem;
     background-color: transparent;
     border: none;
@@ -111,8 +138,8 @@ body {
     font-size: 1.8rem;
     position: relative;
     padding: 0 0 0 2.638rem;
-    z-index: -1; }
-    .header .wrap .btn__2::after {
+    cursor: pointer; }
+    .header .wrap .wrapForBtns .btn__2::after {
       content: '';
       position: absolute;
       top: 0;
@@ -201,6 +228,10 @@ body {
   .header .wrap .city__items {
     width: 60%; } }
 
+@media (max-width: 768px) {
+  body {
+    background-color: #7290B9; } }
+
 @media (max-width: 767.98px) {
   .header .wrap .city__items {
     width: 80%; }
@@ -219,13 +250,52 @@ body {
       justify-content: space-between;
       align-items: center; } }
 
+@media (max-width: 720px) {
+  .header .wrap .wrapForBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .wrap .live__search {
+    width: calc( 100% - 10.5rem); }
+    .header .wrap .live__search__btn {
+      width: 10.5rem; }
+  .temp {
+    margin-top: 19rem; }
+    .temp-info {
+      width: 100%;
+      height: 20.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .temp-info img {
+        width: 15rem;
+        height: 15rem; }
+      .temp-info__number {
+        font-size: 12rem;
+        color: #fff; }
+    .temp-descr {
+      text-align: center;
+      font-weight: 400;
+      font-size: 2.5rem;
+      color: #fff; }
+  .footer-wrapMaxWidth__1 {
+    display: flex;
+    justify-content: space-between; }
+    .footer-wrapMaxWidth__1 .footer-wrap__wind {
+      width: 18rem; }
+    .footer-wrapMaxWidth__1 .footer-wrap__pressure {
+      width: 18rem; }
+  .footer-wrapMaxWidth__2 {
+    display: flex;
+    justify-content: space-between; }
+    .footer-wrapMaxWidth__2 .footer-wrap__humidity {
+      width: 18rem; }
+    .footer-wrapMaxWidth__2 .footer-wrap__rain {
+      width: 18rem; } }
+
 @media (max-width: 516px) {
   .header .wrap .city__items {
     width: 90%; } }
-
-@media (max-width: 461px) {
-  .header .wrap .city__items {
-    width: 100%; } }
 
 @media (max-width: 461px) {
   .header .wrap .city__items {
@@ -233,13 +303,19 @@ body {
     .header .wrap .city__items span {
       font-size: 3rem; } }
 
+@media (max-width: 425px) {
+  .header .wrap .live__search {
+    width: calc( 100% - 8rem);
+    height: 6.7rem; }
+    .header .wrap .live__search__btn {
+      width: 8rem;
+      height: 6.7rem; } }
+
+@media (max-width: 389px) {
+  .header .wrap .wrapForBtns {
+    display: block; } }
+
 @media (max-width: 375px) {
   .footer-wrapMaxWidth__2 {
     margin-top: 5rem; } }
-
-.show {
-  display: block; }
-
-.hide {
-  display: none; }
 
